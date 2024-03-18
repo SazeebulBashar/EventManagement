@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventActivity"
+    android:orientation="vertical"
+    android:background="#FFFF8D"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableRow
+                android:id="@+id/signup_nameRow">
+                <TextView
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+                <EditText
+                    android:id="@+id/signup_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/signup_emailRow">
+                <TextView
+                    android:text="Email"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+                <EditText
+                    android:id="@+id/signup_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/signup_phoneRow">
+                <TextView
+                    android:text="Phone"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+                <EditText
+                    android:id="@+id/signup_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/signup_userIDRow">
+                <TextView
+                    android:text="User ID"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+                <EditText
+                    android:id="@+id/signup_userID"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text|number"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/signup_passwordRow">
+                <TextView
+                    android:text="Password"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+                <EditText
+                    android:id="@+id/signup_password"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"
+
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/signup_RepasswordRow">
+                <TextView
+                    android:text="Re-Enter Password"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    />
+
+                <EditText
+                    android:id="@+id/signup_repassword"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/signup_rememberUserIDRow"
+                >
+                <CheckBox
+                    android:id="@+id/signup_remembeerUserID"
+                    android:text="Remember User ID"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/signup_rememberPasswordRow"
+                >
+                <CheckBox
+                    android:id="@+id/signup_rememberLogin"
+                    android:text="Remember Login"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/signup_alrdy_accountRow">
+                <TextView
+                    android:id="@+id/signup_accountInfo"
+                    android:text="Already Have Account?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/signup_toggleBtn"
+                    android:text="LogIn"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#282EEA"
+                    android:backgroundTint="@color/white"
+
+                    />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signup_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="exit"
+            android:textSize="20sp"
+            android:backgroundTint="#FFFF8D"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/signup_go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go"
+            android:textSize="20sp"
+            android:backgroundTint="#FFFF8D"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
